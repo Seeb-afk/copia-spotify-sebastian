@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link 
+      rel="stylesheet" 
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=block" 
+    />
+  </head>
+  <body class="bg-[var(--bg-color)]">
+    
+    <div class="h-screen w-full grid grid-rows-[64px_1fr_88px]">
+      
+      <header class="flex items-center p-[8px] gap-[8px] max-md:gap-1">
+        
+        <div class="flex items-center justify-center w-[72px] h-full">
+          <button class="flex items-center justify-center p-[8px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">
+            <img 
+              src="./svg/spotify-logo.svg" 
+              alt="Spotify"
+              class="w-8 h-8"
+            >
+          </button>
+        </div>
+
+        <div class="flex-1 flex items-center justify-between md:justify-center gap-[8px]">
+
+          <div class="md:flex-1 md:max-w-[480px] flex items-center gap-[8px]">
+            
+            <button 
+              class="flex items-center p-[12px] bg-[var(--bg-section)] rounded-full cursor-pointer hover:bg-[var(--bg-sub-section-hover)] transition duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <span class="material-symbols-outlined">home</span>
+            </button>
+            
+            <div class="flex-1 flex items-center gap-[8px] bg-[var(--bg-section)] p-[12px] rounded-full hover:bg-[var(--bg-sub-section-hover)] transition duration-200 focus-within:ring-2 focus-within:ring-white">
+
+              <span class="material-symbols-outlined cursor-pointer">
+                search
+              </span>
+              
+              <input 
+                type="text" 
+                placeholder="¿Qué quieres reproducir?"
+                class="flex-1 hidden md:flex outline-none"
+              >
+              
+              <div class="hidden md:flex">
+                <span class="material-symbols-outlined cursor-pointer">
+                  explore
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-[12px] px-[16px]">
+          <button class="hidden min-[1065px]:flex color-black cursor-pointer bg-[var(--bg-section)] py-[12px] px-[16px] rounded-full hover:bg-[var(--bg-sub-section-hover)] transition duration-200 focus:outline-none focus:ring-2 focus:ring-white">
+            Descubrir Premium
+          </button>
+
+          <button class="flex items-center gap-[8px] whitespace-nowrap cursor-pointer bg-[var(--bg-section)] py-[12px] px-[16px] rounded-full hover:bg-[var(--bg-sub-section-hover)] transition duration-200 focus:outline-none focus:ring-2 focus:ring-white">
+            <span class="material-symbols-outlined">download_for_offline</span>
+            <span class="cursor-pointer max-md:hidden">Instalar app</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-[12px] pr-[8px]">
+
+          <button class="flex items-center justify-center p-[8px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">
+            <span class="material-symbols-outlined cursor-pointer">notifications</span>
+          </button>
+
+          <button class="flex items-center justify-center p-[8px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">
+            <span class="material-symbols-outlined cursor-pointer">groups</span>
+          </button>
+          
+          <button class="flex items-center justify-center p-[8px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">
+            <span class="material-symbols-outlined cursor-pointer">account_circle</span>
+          </button>
+        </div>
+      </header>
+      
+      <main class="flex h-full px-[8px] gap-[8px]">
+
+        <aside class="flex flex-col w-[72px] lg:w-[280px] h-full bg-[var(--bg-section)] rounded-md">
+
+        </aside>
+
+        <section class="flex-[2] min-w-0 h-full bg-[var(--bg-section)] rounded-md">
+
+        </section>
+
+        <section class="hidden md:block flex-[1] min-w-[196px] h-full bg-[var(--bg-section)] rounded-md">
+
+        </section>
+
+      </main>
+
+      <footer class="grid grid-cols-[7fr_3fr] md:grid-cols-[1fr_1fr_1fr] bg-green-500 p-[8px] gap-[8px]">
+
+        <div class="flex flex-col items-center justify-center md:col-start-2">
+          <div class="flex flex-col items-center">
+          
+            <div class="flex items-center gap-[8px]">
+
+              <span class="material-symbols-outlined cursor-pointer">alt_route</span>
+              <span class="material-symbols-outlined cursor-pointer">first_page</span>
+              <span class="material-symbols-outlined cursor-pointer">play_circle</span>
+              <span class="material-symbols-outlined cursor-pointer">last_page</span>
+              <span class="material-symbols-outlined cursor-pointer">laps</span>
+            </div>
+
+            <div class="flex items-center gap-[12px] w-full">
+
+              <span>-:--</span>
+              <div class="flex-1 max-w-[200px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] h-[4px] bg-white rounded-full"></div>
+              <span>-:--</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-[10px] pr-[8px] md:col-start-3 md:justify-self-end">
+
+          <span class="material-symbols-outlined cursor-pointer">menu_open</span>
+          <span class="material-symbols-outlined cursor-pointer">devices</span>
+          <span class="material-symbols-outlined cursor-pointer">volume_up</span>
+          <div class="w-[80px] h-[4px] bg-white rounded-full max-md:hidden"></div>
+          <span class="material-symbols-outlined cursor-pointer">crop_free</span>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

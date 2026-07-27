@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*
+===== Variables =====
+*/
+
+:root {
+  --bg-color: #000000;
+  --bg-section: #121212;
+  --bg-sub-section: #1f1f1f;
+  --bg-sub-section-hover: #242424;
+}
+
+
+/*
+===== General =====
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
