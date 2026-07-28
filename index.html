@@ -59,7 +59,7 @@
         </div>
 
         <div class="flex items-center gap-[12px] px-[16px]">
-          <button class="hidden min-[1065px]:flex color-black cursor-pointer bg-[var(--bg-section)] py-[12px] px-[16px] rounded-full hover:bg-[var(--bg-sub-section-hover)] transition duration-200 focus:outline-none focus:ring-2 focus:ring-white">
+          <button class="hidden min-[1065px]:flex color-black cursor-pointer bg-white py-[12px] px-[16px] rounded-full hover:scale-105 transition duration-200" style="color: black; font-weight: 800;">
             Descubrir Premium
           </button>
 
@@ -87,8 +87,15 @@
       
       <main class="flex h-full px-[8px] gap-[8px]">
 
-        <aside class="flex flex-col w-[72px] lg:w-[280px] h-full bg-[var(--bg-section)] rounded-md">
+        <aside class="flex flex-col w-[72px] lg:w-[280px] h-full items-center bg-[var(--bg-section)] rounded-md">
+          
+          <div>
 
+          </div>
+
+          <div>
+            
+          </div>
         </aside>
 
         <section class="flex-[2] min-w-0 h-full bg-[var(--bg-section)] rounded-md">
@@ -101,24 +108,24 @@
 
       </main>
 
-      <footer class="grid grid-cols-[7fr_3fr] md:grid-cols-[1fr_1fr_1fr] bg-green-500 p-[8px] gap-[8px]">
+      <footer class="grid grid-cols-[7fr_3fr] md:grid-cols-[1fr_1fr_1fr] p-[8px] gap-[8px]">
 
         <div class="flex flex-col items-center justify-center md:col-start-2">
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center md:w-full">
           
-            <div class="flex items-center gap-[8px]">
+            <div class="flex items-center gap-[12px]">
 
-              <span class="material-symbols-outlined cursor-pointer">alt_route</span>
-              <span class="material-symbols-outlined cursor-pointer">first_page</span>
-              <span class="material-symbols-outlined cursor-pointer">play_circle</span>
-              <span class="material-symbols-outlined cursor-pointer">last_page</span>
-              <span class="material-symbols-outlined cursor-pointer">laps</span>
+              <span class="material-symbols-outlined cursor-pointer hover:scale-110">alt_route</span>
+              <span class="material-symbols-outlined cursor-pointer hover:scale-110">first_page</span>
+              <span class="material-symbols-outlined cursor-pointer hover:scale-110" style="font-size: 32px;">play_circle</span>
+              <span class="material-symbols-outlined cursor-pointer hover:scale-110">last_page</span>
+              <span class="material-symbols-outlined cursor-pointer hover:scale-110">laps</span>
             </div>
 
             <div class="flex items-center gap-[12px] w-full">
 
               <span>-:--</span>
-              <div class="flex-1 max-w-[200px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] h-[4px] bg-white rounded-full"></div>
+              <div class="flex-1 w-[240px] h-[4px] md:w-auto bg-white rounded-full items-center"></div>
               <span>-:--</span>
             </div>
           </div>
@@ -126,11 +133,11 @@
 
         <div class="flex items-center justify-center gap-[10px] pr-[8px] md:col-start-3 md:justify-self-end">
 
-          <span class="material-symbols-outlined cursor-pointer">menu_open</span>
-          <span class="material-symbols-outlined cursor-pointer">devices</span>
-          <span class="material-symbols-outlined cursor-pointer">volume_up</span>
+          <span class="material-symbols-outlined cursor-pointer p-[4px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">menu_open</span>
+          <span class="material-symbols-outlined cursor-pointer p-[4px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">devices</span>
+          <span class="material-symbols-outlined cursor-pointer p-[4px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">volume_up</span>
           <div class="w-[80px] h-[4px] bg-white rounded-full max-md:hidden"></div>
-          <span class="material-symbols-outlined cursor-pointer">crop_free</span>
+          <span class="material-symbols-outlined cursor-pointer p-[4px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">crop_free</span>
         </div>
       </footer>
 
