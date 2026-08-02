@@ -87,66 +87,180 @@
       
       <main class="flex min-h-0 px-[8px] gap-[8px]">
 
-        <aside class="flex flex-col w-[72px] lg:w-[280px] h-full max-lg:items-center bg-[var(--bg-section)] rounded-md p-[12px] gap-[24px]">
+        <aside class="flex flex-col w-[72px] lg:w-[320px] h-full max-lg:items-center bg-[var(--bg-section)] rounded-md p-[12px] gap-[24px]">
           
-          <div class="flex max-lg:flex-col gap-[12px]">
+          <div class="flex max-lg:flex-col lg:justify-between items-center gap-[10px]">
             
-            <span class="material-symbols-outlined cursor-pointer w-fit p-[8px] rounded-full hover:bg-[var(--bg-sub-section-hover)]" style="font-size: 28px;">library_music</span>
-            <span class="hidden ">Tu Biblioteca</span>
-            <span class="material-symbols-outlined cursor-pointer w-fit p-[8px] rounded-full bg-[var(--bg-sub-section)] hover:bg-[var(--bg-sub-section-hover)]" style="font-size: 28px;">add_2</span>
+            <div class="flex items-center gap-[8px]">
+              <span class="material-symbols-outlined cursor-pointer w-fit p-[8px] rounded-full hover:bg-[var(--bg-sub-section-hover)]" style="font-size: 24px;">library_music</span>
+              <span class="hidden lg:flex font-semibold" style="font-size: var(--size-14);">Tu Biblioteca</span>
+            </div>
+
+            <div class="flex items-center gap-[8px]">
+              <div class="flex items-center justify-center w-fit gap-[4px] p-[8px] lg:px-[14px] rounded-full bg-[var(--bg-sub-section)] hover:bg-[var(--bg-sub-section-hover)] cursor-pointer">
+                <span class="material-symbols-outlined" style="font-size: 18px;">add_2</span>
+                <span class="hidden lg:flex font-semibold" style="font-size: var(--size-14);">Crear</span>
+              </div>
+
+              <div class="hidden lg:flex">
+                <span class="material-symbols-outlined cursor-pointer w-fit p-[8px] rounded-full hover:bg-[var(--bg-sub-section-hover)]" style="font-size: 16px;">open_in_full</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex px-[4px] cursor-pointer">
+            <span class="hidden lg:flex p-[8px] px-[12px] rounded-full bg-[var(--bg-sub-section)] hover:bg-[var(--bg-sub-section-hover)] font-semibold" style="font-size: var(--size-14);">Listas</span>
           </div>
 
           <div class="flex flex-col gap-[2px] flex-1 overflow-y-auto min-h-0 scrollbar-none">
 
-            <div class="flex w-[64px] h-[64px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] shrink-0">
-              <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
-                <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+            <div class="hidden lg:flex justify-between px-[8px] pb-[12px]">
+              
+              <span class="material-symbols-outlined cursor-pointer hover:scale-105" style="font-size: 22px;">search</span>
+              
+              <div class="flex items-center gap-[8px] cursor-pointer hover:scale-105">
+                <span class="font-semibold" style="font-size: var(--size-14);">Recientes</span>
+                <span class="material-symbols-outlined cursor-pointer" style="font-size: 22px;">lists</span>
               </div>
             </div>
 
-            <div class="flex w-[64px] h-[64px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] shrink-0">
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
               <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
                 <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
               </div>
             </div>
 
-            <div class="flex w-[64px] h-[64px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] shrink-0">
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
               <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
                 <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
               </div>
             </div>
 
-            <div class="flex w-[64px] h-[64px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] shrink-0">
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
               <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
                 <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
               </div>
             </div>
 
-            <div class="flex w-[64px] h-[64px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] shrink-0">
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
               <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
                 <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
               </div>
             </div>
 
-            <div class="flex w-[64px] h-[64px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] shrink-0">
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
               <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
                 <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
               </div>
             </div>
 
-            <div class="flex w-[64px] h-[64px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] shrink-0">
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
               <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
                 <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
               </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
+              </div>
             </div>
-          </div>
+
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
+              <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
+                <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
+              </div>
+            </div>
+
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
+              <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
+                <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
+              </div>
+            </div>
+
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
+              <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
+                <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
+              </div>
+            </div>
+
+            <div class="flex w-[64px] h-[64px] lg:w-full lg:justify-start lg:px-[8px] items-center justify-center gap-4 rounded-lg hover:bg-[var(--bg-sub-section)] cursor-pointer shrink-0">
+              
+              <div class="flex w-[48px] h-[48px] bg-[var(--bg-sub-section-hover)] items-center justify-center rounded-sm cursor-pointer">
+                <span class="material-symbols-outlined cursor-pointer">music_note_2</span>
+              </div>
+
+              <div class="hidden lg:flex flex-col items-between">
+
+                <span>Mi Lista</span>
+                <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
+              </div>
+            </div>
         </aside>
 
         <section class="flex-[2] min-w-0 h-full bg-[var(--bg-section)] rounded-md">
 
+          
         </section>
 
-        <section class="hidden md:block flex-[1] min-w-[196px] h-full bg-[var(--bg-section)] rounded-md">
+        <section class="hidden md:block flex-[1] min-w-[128px] h-full bg-[var(--bg-section)] rounded-md">
 
         </section>
 
@@ -169,7 +283,7 @@
             <div class="flex items-center gap-[12px] w-full">
 
               <span>-:--</span>
-              <div class="flex-1 w-[240px] h-[4px] md:w-auto bg-white rounded-full items-center"></div>
+              <div class="flex-1 w-[240px] h-[4px] md:w-auto bg-white rounded-full items-center cursor-pointer"></div>
               <span>-:--</span>
             </div>
           </div>
@@ -180,7 +294,7 @@
           <span class="material-symbols-outlined cursor-pointer p-[4px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">menu_open</span>
           <span class="material-symbols-outlined cursor-pointer p-[4px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">devices</span>
           <span class="material-symbols-outlined cursor-pointer p-[4px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">volume_up</span>
-          <div class="w-[80px] h-[4px] bg-white rounded-full max-md:hidden"></div>
+          <div class="w-[80px] h-[4px] bg-white rounded-full max-md:hidden cursor-pointer"></div>
           <span class="material-symbols-outlined cursor-pointer p-[4px] rounded-full hover:bg-[var(--bg-sub-section-hover)] hover:scale-105 transition duration-200">crop_free</span>
         </div>
       </footer>
