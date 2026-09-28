@@ -1,8 +1,12 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tendencias, álbumes y artistas populares | Spotify Web</title>
+    <meta name="description" content="Descubre las canciones en tendencia, los álbumes y artistas más populares. Música urbana, reguetón y pop en español, con novedades cada semana." />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles.css">
     <link 
@@ -253,143 +257,164 @@
                 <span style="font-size: var(--size-14); color: #bebebe;">Lista • Seeb</span>
               </div>
             </div>
+          </div>
         </aside>
 
         <section class="flex-[2] min-w-0 h-full overflow-x-hidden overflow-y-auto scrollbar-none bg-[var(--bg-section)] rounded-md">
           <div class="flex w-full min-w-0 flex-col gap-8 py-4">
 
+            <h1 class="text-2xl font-bold px-6">Música en tendencia, álbumes y artistas populares</h1>
+
             <section class="flex min-w-0 flex-col">
 
               <div class="flex items-center justify-between px-6 mb-6">
-                <h2 class="text-2xl font-bold">Trending songs</h2>
-                <button class="text-sm font-bold text-[#b3b3b3] hover:underline cursor-pointer">Show all</button>
+                <h2 class="text-2xl font-bold">Canciones en tendencia</h2>
+                <button class="text-sm font-bold text-[#b3b3b3] hover:underline cursor-pointer">Ver todo</button>
               </div>
 
               <div class="flex w-full min-w-0 max-w-full gap-6 overflow-x-auto overflow-y-hidden overscroll-x-contain scrollbar-none px-6 pb-2">
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir Peli De Terror de E Koddy G, THE FAVORITES, E Conep, Young Miko" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Peli De Terror</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">E Koddy G, THE FAVORITES, E Conep, Young Miko</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/cancion/peli-de-terror" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Peli De Terror</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">E Koddy G, THE FAVORITES, E Conep, Young Miko</span>
+                    </div>
+                  </a>
+                </article>
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir After (feat. Young Miko) de E Conep, Young Miko" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">After (feat. Young Miko)</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">E Conep, Young Miko</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/cancion/after-feat-young-miko" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">After (feat. Young Miko)</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">E Conep, Young Miko</span>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir HO2 de E FANTAROSARIO, Yan Block" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">HO2</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">E FANTAROSARIO, Yan Block</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/cancion/ho2" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">HO2</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">E FANTAROSARIO, Yan Block</span>
+                    </div>
+                  </a>
+                </article>
+
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir COMPA de (uy como ARIAVEG" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">COMPA</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">(uy como ARIAVEG</span>
-                  </div>
-                </div>
-                <!-- #5 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/cancion/compa" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">COMPA</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">(uy como ARIAVEG</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir PERRO NEGRO de Bad Bunny, Feid" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">PERRO NEGRO</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Bad Bunny, Feid</span>
-                  </div>
-                </div>
-                <!-- #6 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/cancion/perro-negro" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">PERRO NEGRO</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Bad Bunny, Feid</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir LA FALDA de Myke Towers" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">LA FALDA</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Myke Towers</span>
-                  </div>
-                </div>
-                <!-- #7 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/cancion/la-falda" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">LA FALDA</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Myke Towers</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir SI BEFORE de NICKI NICOLE" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">SI BEFORE</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">NICKI NICOLE</span>
-                  </div>
-                </div>
-                <!-- #8 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/cancion/si-before" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">SI BEFORE</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">NICKI NICOLE</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir OTRA ATLÁNTIDA de Rels B" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">OTRA ATLÁNTIDA</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Rels B</span>
-                  </div>
-                </div>
+                  <a href="/cancion/otra-atlantida" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">OTRA ATLÁNTIDA</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Rels B</span>
+                    </div>
+                  </a>
+                </article>
 
               </div>
             </section>
@@ -397,135 +422,151 @@
             <section class="flex min-w-0 flex-col">
 
               <div class="flex items-center justify-between px-6 mb-6">
-                <h2 class="text-2xl font-bold">Popular albums and singles</h2>
-                <button class="text-sm font-bold text-[#b3b3b3] hover:underline cursor-pointer">Show all</button>
+                <h2 class="text-2xl font-bold">Álbumes y singles populares</h2>
+                <button class="text-sm font-bold text-[#b3b3b3] hover:underline cursor-pointer">Ver todo</button>
               </div>
 
               <div class="flex w-full min-w-0 max-w-full gap-6 overflow-x-auto overflow-y-hidden overscroll-x-contain scrollbar-none px-6 pb-2">
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir el álbum DeBirí Kirar Más Fotos de Bad Bunny" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">DeBirí Kirar Más Fotos</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Bad Bunny</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/album/debiri-kirar-mas-fotos" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">DeBirí Kirar Más Fotos</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Bad Bunny</span>
+                    </div>
+                  </a>
+                </article>
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir el álbum BORONDO de Beéle" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">BORONDO</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Beéle</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/album/borondo" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">BORONDO</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Beéle</span>
+                    </div>
+                  </a>
+                </article>
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir el álbum Lomismo de Siempre de Mora" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Lomismo de Siempre</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Mora</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/album/lomismo-de-siempre" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Lomismo de Siempre</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Mora</span>
+                    </div>
+                  </a>
+                </article>
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir el álbum Un Verano de Bad Bunny" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Un Verano</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Bad Bunny</span>
-                  </div>
-                </div>
-                <!-- #5 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/album/un-verano" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Un Verano</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Bad Bunny</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir el álbum MALA SANTA de Rels B" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">MALA SANTA</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Rels B</span>
-                  </div>
-                </div>
-                <!-- #6 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/album/mala-santa" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">MALA SANTA</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Rels B</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir el álbum BZRP Music Sessions, Vol. 53 de Bizarrap" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">BZRP Music Sessions, Vol. 53</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Bizarrap</span>
-                  </div>
-                </div>
-                <!-- #7 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/album/bzrp-music-sessions-vol-53" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">BZRP Music Sessions, Vol. 53</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Bizarrap</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir el álbum NGL de Duki" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">NGL</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Duki</span>
-                  </div>
-                </div>
-                <!-- #8 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/album/ngl" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">NGL</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Duki</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-md bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">album</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">album</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Reproducir el álbum Las Moras de Karol G" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Las Moras</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Karol G</span>
-                  </div>
-                </div>
+                  <a href="/album/las-moras" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Las Moras</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Karol G</span>
+                    </div>
+                  </a>
+                </article>
 
               </div>
             </section>
@@ -533,135 +574,151 @@
             <section class="flex min-w-0 flex-col">
 
               <div class="flex items-center justify-between px-6 mb-6">
-                <h2 class="text-2xl font-bold">Popular artists</h2>
-                <button class="text-sm font-bold text-[#b3b3b3] hover:underline cursor-pointer">Show all</button>
+                <h2 class="text-2xl font-bold">Artistas populares</h2>
+                <button class="text-sm font-bold text-[#b3b3b3] hover:underline cursor-pointer">Ver todo</button>
               </div>
 
               <div class="flex w-full min-w-0 max-w-full gap-6 overflow-x-auto overflow-y-hidden overscroll-x-contain scrollbar-none px-6 pb-2">
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-full bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">person</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">person</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Ver los tops de Bad Bunny" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Bad Bunny</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artist</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/artista/bad-bunny" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Bad Bunny</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artista</span>
+                    </div>
+                  </a>
+                </article>
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-full bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">person</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">person</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Ver los tops de KAROL G" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">KAROL G</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artist</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/artista/karol-g" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">KAROL G</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artista</span>
+                    </div>
+                  </a>
+                </article>
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-full bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">person</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">person</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Ver los tops de Rauw Alejandro" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Rauw Alejandro</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artist</span>
-                  </div>
-                </div>
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/artista/rauw-alejandro" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Rauw Alejandro</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artista</span>
+                    </div>
+                  </a>
+                </article>
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-full bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">person</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">person</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Ver los tops de Beele" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Beele</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artist</span>
-                  </div>
-                </div>
-                <!-- #5 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/artista/beele" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Beele</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artista</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-full bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">person</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">person</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Ver los tops de Feid" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Feid</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artist</span>
-                  </div>
-                </div>
-                <!-- #6 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/artista/feid" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Feid</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artista</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-full bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">person</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">person</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Ver los tops de Quevedo" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Quevedo</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artist</span>
-                  </div>
-                </div>
-                <!-- #7 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                  <a href="/artista/quevedo" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Quevedo</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artista</span>
+                    </div>
+                  </a>
+                </article>
+                
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-full bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">person</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">person</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Ver los tops de Bizarrap" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">Bizarrap</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artist</span>
-                  </div>
-                </div>
+                  <a href="/artista/bizarrap" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">Bizarrap</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artista</span>
+                    </div>
+                  </a>
+                </article>
                 <!-- #8 (agregado para el scroll horizontal) -->
-                <div class="group w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] cursor-pointer transition duration-200">
+                <article class="group relative w-[178px] h-[276px] max-w-full shrink-0 p-3 rounded-md hover:bg-[var(--bg-sub-section)] transition duration-200 has-[a:focus-visible]:ring-2 has-[a:focus-visible]:ring-white">
 
                   <div class="relative w-[154px] h-[154px] rounded-full bg-[var(--bg-sub-section-hover)] flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]">person</span>
+                    <span class="material-symbols-outlined text-[40px] text-[#6a6a6a]" aria-hidden="true">person</span>
 
-                    <button class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200 cursor-pointer">
-                      <span class="material-symbols-outlined text-[28px] text-black">play_arrow</span>
+                    <button aria-label="Ver los tops de ROSALÍA" class="absolute right-2 bottom-2 w-12 h-12 rounded-full bg-[#1ed760] z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition duration-200 cursor-pointer">
+                      <span class="material-symbols-outlined text-[28px] text-black" aria-hidden="true">play_arrow</span>
                     </button>
                   </div>
 
-                  <div class="mt-1 flex flex-col">
-                    <span class="min-h-[48px] text-base font-bold line-clamp-2">ROSALÍA</span>
-                    <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artist</span>
-                  </div>
-                </div>
+                  <a href="/artista/rosalia" class="block after:absolute after:inset-0 after:content-[''] focus:outline-none cursor-pointer">
+                    <div class="mt-1 flex flex-col">
+                      <h3 class="m-0 min-h-[48px] text-base font-bold line-clamp-2">ROSALÍA</h3>
+                      <span class="min-h-[42px] mt-1 text-sm text-[#b3b3b3] line-clamp-2">Artista</span>
+                    </div>
+                  </a>
+                </article>
 
               </div>
             </section>
